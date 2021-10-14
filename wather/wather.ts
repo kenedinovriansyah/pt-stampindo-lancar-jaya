@@ -12,6 +12,7 @@ axios
   )
   .then((res: AxiosResponse<any>) => {
     const custom = [];
+    const c_array = [];
     res.data.list.map((x) => {
       if (
         !(parseInt(x.dt_txt.split("-")[2].split(" ")[0]) / 2)
@@ -24,8 +25,12 @@ axios
             x.wind.speed
           }ªC`,
         });
+        c_array.push(
+          `${moment(x.dt_txt).format("ddd, D MMM YYYY")} ${x.wind.speed}ªC`
+        );
       }
       return x;
     });
     console.log(custom);
+    console.log(c_array);
   });
