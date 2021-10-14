@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "lib": ["es5", "es6", "dom"],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "include": ["range/range_1_100.ts"],
+  "exclude": ["node_modules"]
+}
