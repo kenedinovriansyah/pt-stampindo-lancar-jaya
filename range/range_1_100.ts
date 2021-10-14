@@ -1,4 +1,4 @@
-const range: number = 100;
+const range = 100;
 const array = [];
 
 var from = 3;

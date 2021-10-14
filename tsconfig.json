@@ -9,6 +9,6 @@
     "allowJs": true,
     "resolveJsonModule": true
   },
-  "include": ["range/range_1_100.ts"],
+  "include": ["range/range_1_100.ts", "wather/*.ts", "wather/wather.ts"],
   "exclude": ["node_modules"]
 }
